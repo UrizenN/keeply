@@ -1,0 +1,103 @@
+.overlay{
+    position: fixed;
+    top:0px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 1000;
+}
+
+.keep-note-page-container{
+    background: linear-gradient(0deg, rgba(19,66,91,1) 0%, rgba(255,255,255,1) 100%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3%;
+    position: fixed;
+    height: 80%;
+    width: 50%;
+    padding: 30px;
+    z-index: 1000;
+}
+.title-and-note-container{
+    background: transparent;
+    height: 88.5%;
+    width: 99%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+.type-title{
+    border: none;
+    color: #4479aa;
+    height: 9%;
+    width: 99.4%;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.type-title:focus{
+    outline: none;
+}
+.type-note:focus{
+    outline: none;
+}
+.type-note{
+    border: none;
+    color: #4479aa;
+    height: 88.4%;
+    width: 99.4%;
+    border-radius: 5px;
+    background-color: transparent;
+    resize: none;
+    max-width: 750ch;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.add-note-button-container{
+    margin: 0%;
+    height: 4%;
+    width: 99%;
+}
+.add-note-button{
+    border: none;
+    float: right;
+    background-color: #5ca4e6;
+    border-radius: 15%;
+    height: 100%;
+    width: 40px;
+}
+.add-note-button:hover{
+    border: none;
+    float: right;
+    background-color: #3d6d99;
+    border-radius: 15%;
+    height: 100%;
+    width: 40px;
+}
+.close-button-con{
+    margin: 0%;
+    height: 4%;
+    width: 99%;
+}
+.close-button{
+    border: none;
+    background-color: red;
+    border-radius: 15%;
+    width: 40px;
+    height: 100%;
+    float: right;
+}
+.close-button:hover{
+    border: none;
+    background-color: rgb(163, 0, 0);
+    border-radius: 15%;
+    width: 40px;
+    height: 100%;
+    float: right;
+}
+

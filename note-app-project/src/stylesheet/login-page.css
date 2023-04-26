@@ -1,0 +1,219 @@
+.login-form{
+    padding: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 20%;
+    height: 40%;
+    border-radius: 5px;
+}
+
+.login-title{
+    width: 97%;
+    height: 23%;
+    margin: 0 0 5px 0;
+    text-align: center;
+    font-size: 40px;
+    width: 99.8%;
+    font-family: 'Silkscreen';
+    font-weight: 800;
+    background: -webkit-linear-gradient(180deg, rgba(0,99,255,1) 0%, rgba(14,255,0,1) 32%, rgba(255,0,0,1) 65%, rgba(241,255,0,1) 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 5px;
+}
+
+.username-area-login{
+    border: 1px solid black;
+    width: 99.8%;
+    height: 23%;
+    margin-bottom: 5px;
+    resize: none;
+    border-radius: 5px;
+    font-size: 30px;
+    color: rgb(133, 156, 177);
+}
+.username-area-login::placeholder{
+    color: rgb(199, 216, 231);
+}
+
+.username-area-login:focus{
+    outline: none;
+}
+
+.password-area-login{
+    border: 1px solid black;
+    width: 99.8%;
+    height: 23%;
+    margin-bottom: 5px;
+    resize: none;
+    border-radius: 5px;
+    font-size: 30px;
+    color: rgb(133, 156, 177);
+}
+
+.password-area-login:focus{
+    outline: none;
+}
+.password-area-login::placeholder{
+    color: rgb(199, 216, 231);
+}
+
+.login-button{
+    border: none;
+    float: right;
+    width: 20%;
+    height: 12%;
+    text-align: center;
+    background: -webkit-linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(241,255,0,1) 100%);
+    margin-right: 29%;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Barlow';
+    font-weight: 800;
+}
+.login-button-a{
+    text-decoration: none;
+}
+
+.register-model-button{
+    border: none;
+    float: left;
+    width: 20%;
+    height: 12%;
+    text-align: center;
+    background: -webkit-linear-gradient(0deg, rgba(0,99,255,1) 0%, rgba(14,255,0,1) 100%);
+    margin-left: 29%;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Barlow';
+    font-weight: 800;
+}
+
+
+.register-model-overlay{
+    position: fixed;
+    top:0px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.671);
+    z-index: 1000;
+}
+
+.sign-up-form{
+    padding: 5px;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 25%;
+    height: 50%;
+    border-radius: 5px;
+    z-index: 1000;
+    background-color: white;
+}
+
+
+.sign-up-title{
+    width: 97%;
+    height: 20%;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    width: 99.8%;
+    font-family: 'Silkscreen';
+    font-weight: 800;
+    background: -webkit-linear-gradient(0deg, rgba(0,99,255,1) 30%, rgba(14,255,0,1) 40%, rgba(255,0,0,1) 55%, rgba(241,255,0,1) 70%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 5px;
+}
+
+.name-surname-area-register{
+    border: 1px solid black;
+    width: 99.8%;
+    height: 20%;
+    margin-bottom: 5px;
+    resize: none;
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: justify;
+    color: rgb(133, 156, 177);
+}
+.name-surname-area-register::placeholder{
+    color: rgb(199, 216, 231);
+}
+
+.name-surname-area-register:focus{
+    outline: none;
+}
+
+.username-area-register{
+    border: 1px solid black;
+    width: 99.8%;
+    height: 20%;
+    margin-bottom: 5px;
+    resize: none;
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: justify;
+    color: rgb(133, 156, 177);
+}
+.username-area-register::placeholder{
+    color: rgb(199, 216, 231);
+}
+
+.username-area-register:focus{
+    outline: none;
+}
+
+.password-area-register{
+    border: 1px solid black;
+    width: 99.8%;
+    height: 20%;
+    margin-bottom: 5px;
+    resize: none;
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: justify;
+    color: rgb(133, 156, 177);
+}
+.password-area-register::placeholder{
+    color: rgb(199, 216, 231);
+}
+
+.password-area-register:focus{
+    outline: none;
+}
+
+.register-button{
+    border: none;
+    float: right;
+    width: 20%;
+    height: 12%;
+    text-align: center;
+    margin-right: 29%;
+    background: -webkit-linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(241,255,0,1) 100%);
+    border-radius: 5px;
+    color: white;
+    font-family: 'Barlow';
+    font-weight: 800;
+}
+
+.quit-register-button{
+    border: none;
+    float: left;
+    width: 20%;
+    height: 12%;
+    text-align: center;
+    background: -webkit-linear-gradient(0deg, rgba(0,99,255,1) 0%, rgba(14,255,0,1) 100%);
+    margin-left: 29%;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Barlow';
+    font-weight: 800;
+}

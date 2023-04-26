@@ -1,0 +1,9 @@
+const LoginButton = (props) => {
+    return /*window.location.pathname === "/" &&*/ props.isCorrect
+        ?   <a className="login-button-a" href={() => {return props.isCorrect ? '/diaries':'/'}}>
+                <button className="login-button" onClick={props.onClick}>Login</button>
+            </a>
+        :   <a className="login-button-a" href="/">
+                <button className="login-button" onClick={props.onClick}>Login</button>
+            </a> 
+}

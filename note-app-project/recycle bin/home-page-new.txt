@@ -1,0 +1,72 @@
+import React from 'react';
+import logo from '../assets/keeply.png'
+import '../index.css';
+import KeepNotePage from './keep-note-page';
+import NoteCard from '../components/note-card';
+import {nanoid} from 'nanoid';
+import {FaPlus} from 'react-icons/fa'
+
+class HomePage extends React.Component{
+    constructor(props){
+        super(props);
+        this.state ={
+            notes: [
+                {
+                    id: nanoid(),
+                    title: 'Lorem ipsum dolor sit amet',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique magna ac leo tempor, eget lobortis odio vestibulum. Proin sit amet volutpat libero, id aliquet leo. Vestibulum pulvinar porta erat ut lobortis. Integer sodales bibendum purus ut rhoncus. Donec condimentum sollicitudin aliquet. Aliquam erat volutpat. Nulla scelerisque tincidunt ante sit amet semper.',
+                    date: '15/03/2024', 
+                },
+                {
+                    id: nanoid(),
+                    title: 'Lorem ipsum dolor sit amet',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique magna ac leo tempor, eget lobortis odio vestibulum. Proin sit amet volutpat libero, id aliquet leo. Vestibulum pulvinar porta erat ut lobortis. Integer sodales bibendum purus ut rhoncus. Donec condimentum sollicitudin aliquet. Aliquam erat volutpat. Nulla scelerisque tincidunt ante sit amet semper.',
+                    date: '15/03/2021',
+                },
+                {
+                    id: nanoid(),
+                    title: 'Lorem ipsum dolor sit amet',
+                    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique magna ac leo tempor, eget lobortis odio vestibulum. Proin sit amet volutpat libero, id aliquet leo. Vestibulum pulvinar porta erat ut lobortis. Integer sodales bibendum purus ut rhoncus. Donec condimentum sollicitudin aliquet. Aliquam erat volutpat. Nulla scelerisque tincidunt ante sit amet semper.',
+                    date: '15/03/2021',
+                },
+            ],
+            open: false,
+        }
+        this.addNote = this.addNote.bind(this);
+    }
+    toggleView(){
+        console.log('toggle is working')
+        this.setState({open: true});
+    }
+    addNote(myMap){
+        this.setState({notes: this.state.notes.push(myMap)})
+    }
+    render(){
+        return(
+            <>
+                <div className='HomePage'>
+                    <section className='logo-section'>
+                        <img className='logo' src={logo} alt='logo'></img>
+                        <hr className='divider'/>
+                    </section>
+                    <section className='body'>
+                        <div className='notelist-container'>
+                        <div className='notes-list-container'>
+                             {this.state.notes.map((note) => (<NoteCard key={note.id} title={note.title} content={note.content} date={note.date}/>))}
+                        </div>
+                        </div>
+                        <div className='add-button-container'>
+                            <button className='add-button' onClick={() => this.toggleView()}><FaPlus style={{fontSize: '20px'}}/></button>
+                        </div>
+                    </section>
+                </div>
+                <KeepNotePage closeButtonClick={() => this.toggleView} addButtonClick={(theMap) => this.addNote(theMap)} open={this.state.open} />
+            </>
+        );
+    }
+    
+}
+
+export default HomePage;
+
+
