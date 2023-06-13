@@ -41,14 +41,14 @@ const HomePage = () => {
     useEffect (() => {
         const updateNoteList = async() =>{
             console.log(UserID);
-            const myURL = "http://localhost:18842/api/DiaryApp/getnotelist?id="+UserID;
+            const myURL = "http://localhost:x/api/DiaryApp/getnotelist?id="+UserID;
             await axios.get(myURL).then(response => {setNotes(response.data);console.log(response)});
         }
         updateNoteList();
     },[isUpdated, UserID]);
 
     const noteAdder = async (noteTitle, noteContent, dateTime) => {
-            const myURL = 'http://localhost:18842/api/DiaryApp/savenote';
+            const myURL = 'http://localhost:x/api/DiaryApp/savenote';
             await axios.post(myURL,
                 {
                     "title": noteTitle,
@@ -61,7 +61,7 @@ const HomePage = () => {
     }
 
     const deleteNote = async (id) =>{
-        const myURL = "http://localhost:18842/api/DiaryApp/deletenote?id="+id;
+        const myURL = "http://localhost:x/api/DiaryApp/deletenote?id="+id;
         console.log(myURL);
         await axios.delete(myURL).then(response => response=true ? console.log('Note has been deleted!'): console.log('An error occured!'));
         setIsUpdated(!isUpdated);
