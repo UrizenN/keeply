@@ -3,14 +3,12 @@ import React, { useState} from "react";
 import ReactDom  from 'react-dom';
 import '../stylesheet/login-page.css';
 import { useNavigate } from 'react-router-dom';
-//import {LoginEvent} from '../components/login-event';
 
 const LoginPage = () =>{
     const [myUsername,setMyUsername] = useState('');
     const [myPassword,setMyPassword] = useState('');
     const [registerOpen,setRegisterOpen] = useState(false);
     const navigate = useNavigate();
-    //const [Loginevent,setLoginEvent] = useState('');
 
     const handleRegisterRequest = async (fullname, username, password) => {
         console.log('handleRegisterRequest has worked!')
